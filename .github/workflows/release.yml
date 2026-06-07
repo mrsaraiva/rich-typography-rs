@@ -57,7 +57,7 @@ jobs:
           crate_name=$(cargo metadata --no-deps --format-version 1 | \
             python3 -c "import json,sys; print(json.load(sys.stdin)['packages'][0]['name'])")
           version="${{ steps.crate_version.outputs.version }}"
-          if curl -sfL "https://crates.io/api/v1/crates/${crate_name}/${version}"; then
+          if curl -sfL -A "release-workflow (https://github.com/mrsaraiva)" "https://crates.io/api/v1/crates/${crate_name}/${version}"; then
             echo "exists=true" >> "$GITHUB_OUTPUT"
           else
             echo "exists=false" >> "$GITHUB_OUTPUT"
