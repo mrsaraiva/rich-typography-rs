@@ -1,0 +1,7 @@
+/target
+**/target/
+.idea/
+.claude/
+docs/devel/
+.DS_Store
+tmp/

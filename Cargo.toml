@@ -1,0 +1,27 @@
+[package]
+name = "rich-typography-rs"
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.85.0"
+description = "Large decorative text rendering using Unicode box-drawing glyphs"
+license = "MIT"
+repository = "https://github.com/mrsaraiva/rich-typography-rs"
+documentation = "https://docs.rs/rich-typography-rs"
+readme = "README.md"
+keywords = ["terminal", "typography", "text", "ascii-art", "figlet"]
+categories = ["command-line-interface", "text-processing"]
+exclude = [
+    ".idea/",
+    ".claude/",
+    "docs/devel/",
+    "tools/",
+]
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[dependencies]
+rich-rs = { version = "1.1.0", path = "../rich-rs" }
+regex = "1"
+once_cell = "1.19"
