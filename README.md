@@ -4,7 +4,7 @@
 [![Documentation](https://docs.rs/rich-typography-rs/badge.svg)](https://docs.rs/rich-typography-rs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Large decorative text rendering for the terminal using Unicode box-drawing glyphs — a Rust
+Large decorative text rendering for the terminal using Unicode box-drawing glyphs, a Rust
 port of Python's [rich-typography](https://github.com/mtkalms/rich-typography), built on
 [rich-rs](https://github.com/mrsaraiva/rich-rs).
 
@@ -45,8 +45,8 @@ cargo run --example hello
 cargo run --example showcase
 ```
 
-- `hello` — minimal "render a word" example
-- `showcase` — bundled fonts and styling options
+- `hello`: minimal "render a word" example
+- `showcase`: bundled fonts and styling options
 
 ## License
 
